@@ -213,6 +213,10 @@ function initiateTextChat() {
     ws.addEventListener('close', (event) => {
         console.log('Text chat WebSocket connection closed');
     });
+    ws.addEventListener('open', (event) => {
+        console.log('WebSocket connection opened');
+    });
+    
 }
 
 // Send a text message to the server
