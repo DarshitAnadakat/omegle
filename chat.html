@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chat.css">
+    <title>Random Video Chat</title>
+</head>
+<body>
+    <header>
+        <!-- Add your icon or any other header content here -->
+        <img src="your-icon.png" alt="Your Icon">
+        <h1>Chat App</h1>
+    </header>
+
+    <div class="container">
+        <div class="video-container">
+            <video id="localVideo" autoplay muted playsinline></video>
+            <video id="remoteVideo" autoplay playsinline></video>
+        </div>
+        
+        <div class="chat-container">
+             <!-- Display matched users information here -->
+        <div id="matchedUsersInfo"></div>
+
+            <div id="chatBox"></div>
+            <input type="text" id="messageInput" placeholder="Type your message...">
+            <button id="sendMessage">Send</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
